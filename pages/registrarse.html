@@ -1,0 +1,72 @@
+<!--esto es un comentario-->
+<!DOCTYPE html> <!--todo el documento esta en html5-->
+
+<html lang="es">
+    <head> <!--etiqueta de configuraciones del navegador-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse |CACFlix</title> <!--titulo de la pagina donde estamos parados-->
+        <link rel="shortcut icon" href="../iconopesaña.ico" type="image/x-icon">
+        <!--icono que representa el sitioweb y se ve en pestaña-->
+
+        <link rel="stylesheet" href="../ccs/estilos.css">
+
+
+    </head>
+    <body>
+        <header class="header1"> <!--esta es la cabecera-->
+            <nav> <!--estiqueta abierta multimedia, imagen-->
+                <a  href="../index.html">
+                <img src="../assets/img/logo640.png" width="50" alt="Logo de CACFlix" loading="lazy">
+                <span>CACFlix</span>
+                </a>
+              
+            </nav>
+        </header>
+        <main>
+          <section id="registro" class="estiloRegistro">
+            <h1>Registro</h1>
+            <form action="valida.php" method="post">
+                <div>
+                    <!--<label for="nombre">Ingrese su nombre:</label>-->
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                </div> 
+                <div>    
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </div>
+                <div>
+                    <input type="email"name="email" id="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="password"name="password" id="password" placeholder="Contraseña" required>
+                </div>
+                <div>
+                    <!--<label for="nacimiento">Fecha de nacimiento:</label>-->
+                    <input type="date" name="nacimiento" id="nacimiento" required>
+                </div>
+                <div>
+                    <select name="pais" id="pais">
+                        <option value="0" selected>Argentina</option>
+                        <option value="1">Chile</option>
+                        <option value="2">Uruguay</option>
+                        <option value="3">Brasil</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="termino">Acepta términos y condiciones</label>
+                    <input type="checkbox" name="termino" id="termino">
+                </div>
+                <div>
+                    <input type="submit" value="Registrarse" class="button">
+                    <input type="reset" value="Restablecer" class="button">
+                </div>
+                       
+            </form>
+          </section>  
+
+        </main>
+        <footer> <!--este es el pie de pagina-->
+                 
+        </footer>
+    </body>
+</html>

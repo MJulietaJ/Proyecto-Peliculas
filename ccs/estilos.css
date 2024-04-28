@@ -1,0 +1,427 @@
+/*esto es un comentario en css*/
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap');
+/*reseteo de valores*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo Narrow", sans-serif;
+  
+}
+/* configuraciones variables */  
+:root{
+    --main-color:aliceblue; 
+    --secondary-color: rgb(31, 30, 31);
+    --third-color: rgb(210, 32, 62);
+    --third-color-t:rgba(135, 8, 35, 0.501); 
+}
+/* estilos del body*/
+body{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header, footer{
+    background-color: var(--third-color);
+    color: (var(--main-color));
+    padding: 20px;
+}
+
+/* estilos del header*/
+.header1{
+    /*border: var(--third-color-t);*/
+    height: 12vh;
+    position: sticky;/*para inmovilizarlo en la parte sup cnd scroll*/
+    top: 0; /*fija en la parte superior*/
+    z-index: 10;/*quede encima de todos los elementos*/
+        nav{
+            display: flex;/*fila*/
+            align-items: center;/*eje contrario altura*/
+            justify-content: space-between;
+            a{
+                text-decoration: none;/*al ancla le saco color texto*/
+                color: var(--main-color);
+                font-size: 1.3rem;
+
+            }
+                ul{
+                    list-style: none;/*saca color azul*/
+                    display: flex;
+                    column-gap: 20px;
+                    a{
+                        font-size: 1.3rem;
+                    }
+                }
+        }
+}
+
+
+
+/*.colorPrincipal{
+    background-color: rgb(31, 30, 31);
+}*/
+
+/*.colorSecundario{
+    background-color: rgb(159, 54, 71);
+}*/
+
+/*.colorFuente{
+    color: aliceblue;
+}*/
+
+/*estilos main*/
+
+.tituloPricipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+}
+
+.sectionPrincipal {
+    background-image: linear-gradient(to bottom, #000000a3, #000000a3), url("../assets/img/fondotv2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        display: inline-block;/*para que deje de ser lineal*/
+        text-decoration: none;/*saca color azul*/
+        color: var(--main-color);/*elijo el color de funete*/
+        font-size: 1.5rem;/*tamaño*/
+        border: 2px solid var(--main-color);/*borde de boton*/
+        border-radius: 5px;/*redondear bordes*/
+        /*padding: 10px 20px;separar palabra de marco boton*/
+        margin-top: 20px;/*separar boton del texto sup*/
+        background-color: var(--third-color);
+    }
+}
+
+.button{
+    background-color: var(--third-color);
+    color: var(--main-color);
+    border: none;
+    border-radius: 4px;
+    font-size: 1.5rem;/*tamaño*/
+}
+
+/*estilos seccion buscar*/
+.seccionBuscar{
+    height: 70vh;/*lugar que ocupa de pantalla*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilos seccion tendencias*/
+.peliculasTendencias{
+    width: 80%; /*lugar que ocupa*/
+    margin: 0 auto;
+    text-align: center;
+    h2{ /*espaciodos del h2*/
+        margin: 50px;
+        margin-bottom: 20px;
+    }
+    .galeriaTendencias{
+        display: flex;/*las peliculas se ubican una al lado de la otra*/
+        justify-content: space-evenly;/*realiza igual spacio entre obj*/
+        flex-wrap: wrap; /*bajen los hijos que no entran*/
+        gap: 20px;/*espacio entre las img*/
+        margin-bottom: 20px;
+        div{
+            width: 250px;
+            height: 350px;
+            box-shadow: 10px 14px 38px -9px rgba(246,54,54,0.21);/*sombreado detras de la img*/
+            img{
+                width: 100%;/*oucpe de su padre*/
+                height: 100%;/*ocupe de su padre*/
+                object-fit: cover;/*no se deformen*/
+                border-radius: 5px;/*borde readio de img*/
+            }
+        }
+        bottom{
+            margin-bottom: 20px;
+        }
+    }
+    
+}
+
+/*estilos seccion peliculas aclamadas*/
+.pelicularAclamadas{
+    width: 80%; /*lugar que ocupa*/
+    margin: 0 auto;
+    text-align: center;
+    h2{ /*espaciodos del h2*/
+        margin: 50px;
+        margin-bottom: 20px;
+    }
+
+    .galeriaAclamadas{
+        overflow-x: scroll;
+        overflow-y: hidden;/*no la muestro a la barra en vertical*/
+        width: 100%;
+        display: flex;/*las peliculas se ubican una al lado de la otra*/
+        justify-content: flex-start;/*las img justifican desde el comienzo*/
+        align-items: flex-start;/*las img se alinean desde el comienzo*/
+        padding: 0px 0px 40px 0px;
+
+        div{
+            width: 200px;/*ancho*/
+            /*min-width: 200px; minimo de ancho*/
+            flex-shrink: 0;/*que no se achique img*/
+            height: 300px;/*alto*/
+            box-shadow: 10px 14px 38px -9px rgba(246,54,54,0.21);/*sombreado detras de la imagen*/
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 30px;/*margen lateral*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            img{
+                border-radius: 5%;
+                width: 100%;/*oucpe de su padre*/
+                height: 100%;/*ocupe de su padre*/
+                object-fit: cover;/*no se deformen*/
+                border-radius: 5px;/*borde readio de img*/
+            }
+        }
+
+    }
+        
+}
+
+/*estilos footer*/
+.footer{
+    height: 10vh;/*alto*/
+    
+     nav{
+        display: flex;/*fila*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;/*eje contrario altura*/
+        
+        justify-content: space-between;
+        ul{
+            list-style: none;/*saca color azul*/
+            display: flex;
+            column-gap: 20px;
+            a{
+                text-decoration: none;/*al ancla le saco color texto*/
+                color: var(--main-color);
+                font-size: 1.2rem;
+            }
+        }    
+    }    
+}
+
+/*estilo detalle pelicula*/
+.detallePelicula{
+    height: 90vh;
+    background-image: linear-gradient(to bottom, #000000a3, #000000a3), url("../assets/img/avatar.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 75%; 
+
+    display: flex;/*columnas*/
+    flex-direction: row;/*horizontal*/
+    justify-content: space-evenly;
+    padding: 30px;
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+}    
+
+.detalleImagen{
+
+    height: 50vh;
+    width: 40vh;
+}
+
+.detalleTexto{
+    
+    max-width: 60%;
+    height: auto;
+    text-align: center;
+       
+}     
+
+.detalleTrailer{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2{
+        text-align: center;
+    }
+
+}
+    
+    
+
+
+/*estilo inicio sesion*/
+.estiloInicioSesion{
+    background-image: linear-gradient(to bottom, #000000a3, #000000a3), url("../assets/img/imagenfondo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    form{
+        width: 95%;
+        text-align: center;
+    }
+    li{
+        a{
+            text-decoration: none;
+            color: var(--main-color);
+            font-size: .9rem;  
+        }
+    }
+
+}
+
+/*estilo registrarse*/
+.estiloRegistro{
+    background-image: linear-gradient(to bottom, #000000a3, #000000a3), url("../assets/img/imagenfondo3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registrarseSinEstilo{
+    text-decoration: none; /*al ancla sin estilo*/
+    color: var(--main-color);
+    font-size: 1.3rem;
+
+}
+
+
+/*media querie para celular version anterior*/
+/* pantalla de cero a 768*/
+@media screen and (max-width: 992px){
+
+}
+    
+/*media querys sintaxis nueva
+@media screen and (width <= 768px){
+
+}*/
+h1{
+    font-size: 2.3rem;
+    
+}
+
+h2{
+    font-size: 1.8rem;
+    
+}    
+
+.button{
+    
+    font-size: 1.1rem;
+}    
+
+.detallePelicula{
+    background:var(--secondary-color)
+    display: flex;/*columnas*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+}    
+
+/*.detalleImagen{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.detalleTexto{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    text-align: center;
+                         
+}   
+.detalleTrailer{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20%;
+   
+
+}  
+*/
+
+.header1{
+
+    height: 12vh;
+    
+        nav{
+            a{
+               font-size: 1.1rem;
+            }
+                ul{
+                    
+                    a{
+                        font-size: 1.1rem;
+                    }
+                }
+        }
+}
+
+.footer{
+    
+    
+     nav{
+       
+        ul{
+            
+            a{
+                
+                font-size: .9rem;
+            }
+        }    
+    }    
+}

@@ -1,0 +1,172 @@
+<!--esto es un comentario-->
+<!DOCTYPE html> <!--todo el documento esta en html5-->
+
+<html lang="es">
+    <head> <!--etiqueta de configuraciones del navegador-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CACFlix | Catálogo de películas</title> <!--titulo de la pagina donde estamos parados-->
+        <link rel="shortcut icon" href="./iconopesaña.ico" type="image/x-icon">
+        <!--icono que representa el sitioweb y se ve en pestaña-->
+        
+        <!--link externo de estilos de css-->
+        <link rel="stylesheet" href="../proyecto/ccs/estilos.css">
+
+    </head>
+    <body>
+        <header class="header1"> <!--esta es la cabecera-->
+            <nav> 
+                <a href="#">
+                    <img src="./assets/img/logo640.png" alt="Logo de CACFlix" width="35"loading="lazy"> <!--imagen etiqueta abierta-->
+                    <span>CACFlix</span>
+                </a>
+                <ul> <!--lista desordenada-->
+                    <li>
+                        <a href="#tendencias">Tendencias</a>
+                    </li>
+                    <li>
+                        <a href="./pages/registrarse.html">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="./pages/iniciosesion.html">Iniciar Sesión</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="sectionPrincipal">
+                <div class="tituloPricipal colorFuente">
+                    <h1>Películas y series ilimitadas
+                    <h1>en un solo lugar</h1>
+                    <h2>Disfruta donde quieras.
+                    </h2>
+                    <h2>Cancela en cualquier momento.</h2>
+
+                <a href="./pages/registrarse.html">Registrarse</a>
+                </div>
+            </section> 
+
+            <section class="seccionBuscar">
+                <h2>¿Qué estás buscando para ver?</h2>
+                <form action="">
+                    <input type="text" placeholder="Buscar..." id="buscar" name="buscar">
+                    <input type="submit" value="Buscar">
+                </form>
+            </section>
+            <hr>
+
+            <section id="tendencias" class="peliculasTendencias">
+                <h2>Las tendencias de hoy</h2>
+                <div class="galeriaTendencias">
+                    <div>
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/avatar.jpg" alt="Avatar"width="150" height="200" loading="lazy">
+                        </a>
+                    </div> 
+                    <div>   
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/elreyleon.jpg" alt="El rey leon"width="150" height="200"loading="lazy">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/guerramundialz.jpg" alt="guerra mundial z"width="150" height="200"loading="lazy">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/hombresdenegro.jpg" alt="Hombre de negro" width="150" height="200">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/jurassic world.jpg" alt="jurassic world" width="150" height="200">
+                        </a>
+                    </div>
+                    <div>
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/vengadores.jpg" alt="Los vengadores" width="150" height="200">
+                        </a>
+                    </div>
+                    <div>   
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/rapido y furioso.jpg" alt="Rapido y furioso" width="150" height="200">
+                        </a>
+                    </div> 
+                    <div>
+                        <a href="./pages/detalle.html">
+                            <img src="../proyecto/assets/img/spiderman.jpg" alt="" width="150" height="200">
+                        </a>
+                    </div>
+                </div>    
+
+                <button class="button">Anterior</button>
+                <button class="button">Siguiente</button>
+                <hr>
+            </section>
+
+            <section class="pelicularAclamadas">
+                <h2>Las más aclamadas</h2>
+                    <div class="galeriaAclamadas">
+                        <div>
+                            <img src="../proyecto/assets/img/starwars.jpg" alt="Satrwars" loading="lazy">
+                        </div>    
+                        <div>
+                            <img src="../proyecto/assets/img/titanic.jpg" alt="Titanic" loading="lazy">    
+                        </div>
+                         <div>
+                            <img src="../proyecto/assets/img/topgun.jpg" alt="Top gun" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/masbaratopordocena.jpg" alt="Mas barato por docena" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/naufrago.jpg" alt="Naufrago" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/salvandoalsoldadoryan.jpg" alt="Salvando al soldado Ryan" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/siempreatulado.jpg" alt="Siempre a tu lado" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/elsenordelosanillos.jpg" alt="El señor de los anillos" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/gladiador.jpg" alt="Gladiador" loading="lazy">    
+                        </div>
+                        <div>
+                            <img src="../proyecto/assets/img/harrypotter.jpg" alt="Harry Potter" loading="lazy">    
+                        </div>
+
+                    </div>    
+                
+            </section>
+        </main>
+        <footer class="footer"> <!--este es el pie de pagina-->
+          <nav>
+            <ul> <!--lista desordenada-->
+                <li>
+                    <a href="">Términos y condiciones</a>
+                </li>
+                <li>
+                    <a href="">Preguntas frecuentes</a>
+                </li>
+                <li>
+                    <a href="">Ayuda</a>
+                </li>
+                <li>
+                    <a href="">Administrador películas</a>
+                </li>
+            </ul>
+          </nav> 
+            <!-- hacer cuando tenga tiempo
+                <a href="main">
+                <img src="" alt="">
+                -->    
+
+            </a>      
+        </footer>
+    </body>
+</html>
