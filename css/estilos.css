@@ -301,6 +301,7 @@ header, footer{
     }
     li{
         a{
+            list-style: none;
             text-decoration: none;
             color: var(--main-color);
             font-size: .9rem;  
@@ -355,7 +356,7 @@ h2{
 }    
 
 .detallePelicula{
-    background:var(--secondary-color)
+    background:var(--secondary-color);
     display: flex;/*columnas*/
     flex-direction: column;
     justify-content: center;
