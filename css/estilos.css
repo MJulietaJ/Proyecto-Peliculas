@@ -125,7 +125,7 @@ header, footer{
 
 /*seccion para api clima*/
 .seccionApi{
-    height: 25vh;/*lugar que ocupa de pantalla*/
+    height: 20vh;/*lugar que ocupa de pantalla*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +133,7 @@ header, footer{
     margin: 0 auto;
     text-align: center;
     h2{ /*espaciodos del h2*/
-        margin: 50px;
+        margin: 10px;
         margin-bottom: 20px;
     }
 }
