@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const obtenerDatosClima = async () => {
-    const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13';
+        const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=-32.8895%2C-68.8458';
+
 const options = {
 	method: 'GET',
 	headers: {
