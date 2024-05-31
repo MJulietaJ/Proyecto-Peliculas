@@ -7,7 +7,7 @@
         <title>Inicio Sesión |CACFlix</title> <!--titulo de la pagina donde estamos parados-->
         <link rel="shortcut icon" href="../iconopesaña.ico" type="image/x-icon">
         <!--icono que representa el sitioweb y se ve en pestaña-->
-
+        <script src="../js/validacion_iniciosesion.js"></script>
         <link rel="stylesheet" href="../css/estilos.css">
 
         
@@ -23,14 +23,17 @@
             </nav>
         </header>
         <main>
-          <section id="iniciosesion " class="estiloInicioSesion">
+          <section id="iniciosesion" class="estiloInicioSesion">
             <h1>Inicio de Sesión</h1>
-            <form action="valida.php" method="post" >
+            <form action="valida.php" method="post" id="forminiciosesion">
                 <div>
                     <input type="email" id="email" name="email" placeholder="Email">
+                    <div id="email-error" class="error-message"></div>
+
                 </div>    
                 <div>
-                    <input type="passwor" id="password" name="password" placeholder="Contraseña">
+                    <input type="password" id="password" name="password" placeholder="Contraseña">
+                    <div id="password-error" class="error-message"></div>
                 </div>    
                 <div>
                     <input class="button" type="submit" value="Iniciar Sesión">

@@ -123,6 +123,29 @@ header, footer{
     font-size: 1.5rem;/*tamaño*/
 }
 
+/*seccion para api clima*/
+.seccionApi{
+    height: 15vh;/*lugar que ocupa de pantalla*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    h2{ /*espaciodos del h2*/
+        margin: 50px;
+        margin-bottom: 20px;
+    }
+}
+.api {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    margin: 20px 0;
+    color: var(--main-color);
+   
+}
+
+
 /*estilos seccion buscar*/
 .seccionBuscar{
     height: 70vh;/*lugar que ocupa de pantalla*/
@@ -308,6 +331,11 @@ header, footer{
         }
     }
 
+}
+/* Regla para los mensajes de error dentro del formulario de inicio de sesión */
+.estiloInicioSesion form .error-message {
+    color: red;
+    font-size: 0.8rem;
 }
 
 /*estilo registrarse*/
