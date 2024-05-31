@@ -1,26 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
     const obtenerDatosClima = async () => {
-        const url = 'https://visual-crossing-weather.p.rapidapi.com/forecast?aggregateHours=24&location=Washington%2CDC%2CUSA&contentType=csv&unitGroup=us&shortColumnNames=0';
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': '07ae67a5cbmsh47b931267c930a0p1c567fjsn700e978f22f6',
-                'X-RapidAPI-Host': 'visual-crossing-weather.p.rapidapi.com'
-            }
-        };
+    const url = 'https://weatherapi-com.p.rapidapi.com/current.json?q=53.1%2C-0.13';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '07ae67a5cbmsh47b931267c930a0p1c567fjsn700e978f22f6',
+		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+	}
+};
 
-        try {
-            const response = await fetch(url, options);
-            const data = await response.json();
-            mostrarDatosClima(data);
-            console.log(data);
-            console.log(result);
-        } catch (error) {
-            console.error(error);
-        }
-    }
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	//console.log(result);
+    mostrarDatosClima(result);
+} catch (error) {
+	console.error(error);
+}
+};
 
-    
 
     const mostrarDatosClima = (datos) => {
         const datosClimaDiv = document.getElementById('datosClima');

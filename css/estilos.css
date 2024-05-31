@@ -125,7 +125,7 @@ header, footer{
 
 /*seccion para api clima*/
 .seccionApi{
-    height: 15vh;/*lugar que ocupa de pantalla*/
+    height: 25vh;/*lugar que ocupa de pantalla*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -137,20 +137,14 @@ header, footer{
         margin-bottom: 20px;
     }
 }
-.api {
-    height: 15vh;/*lugar que ocupa de pantalla*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    text-align: center;
+/*.api {
+    
     padding: 20px;
     background-color: var(--secondary-color);
     margin: 20px 0;
     color: var(--main-color);
    
-}
+}*/
 
 
 /*estilos seccion buscar*/
